@@ -1,0 +1,71 @@
+* {
+    font-family: 'Nova Square', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #224870;
+}
+
+.CONTENEDOR {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.Calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 3fr repeat(5, 1fr);
+    width: 400px;
+    background-color: green;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 15px 10px 0px 5px #00000055;
+}
+
+button {
+    margin: 5px;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #00000000;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 5px 5px 10px 0 #00000055;
+}
+
+button:active{
+    background-color: rgb(0, 70, 41);   
+}
+
+button:focus{
+    outline: none;
+}
+
+.display{
+    grid-column: 1 / -1;
+    background-color: #00000055;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px 20px 10px;
+    text-align: right;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: white;
+    box-shadow: 5px 5px 10px 0 #00000055;
+    word-break: break-all;
+}
+
+#valorACT{
+    font-size: 1.5em;
+}
+
+#valorANT{
+    font-size: 2.2em;
+}
